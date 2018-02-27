@@ -1,7 +1,14 @@
 class Name extends React.Component{
-       render(){
-      return <h1>{this.props.ho} - {this.props.children} - {this.props.ten}</h1>
-       };
+      getInfo(){
+        alert(1995);
+      }
+       render()
+       {return(
+        <div>
+        <h1>{this.props.ho} - {this.props.children} - {this.props.ten}</h1>
+        <button onClick={this.getInfo}>Nam sinh</button>
+        </div>
+      )};
 };
 
 ReactDOM.render(
